@@ -6,14 +6,6 @@
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 |            [장은혁](https://github.com/UpstageAILab)             |            [김채원](https://github.com/UpstageAILab)             |            [이재민](https://github.com/UpstageAILab)             |            [김승호](https://github.com/UpstageAILab)             |            [송현지](https://github.com/UpstageAILab)             |            [기원선](https://github.com/UpstageAILab)             |
 |                            팀장, 데이터 증강, 모델 실험                             |                            모델 실험, 성능 개선                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |
-## 0. Overview
-### Environment
-- _Write Development environment_
-
-### Requirements
-- _Write Requirements_
-
-## 1. Competiton Info
 
 ### Overview
 
