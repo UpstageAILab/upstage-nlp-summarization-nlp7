@@ -9,32 +9,35 @@
 
 ### Overview
 
-- _Write competition information_
+- Dialogue Summarization | 일상 대화 요약
+학교 생활, 직장, 치료, 쇼핑, 여가, 여행 등 광범위한 일상 생활 중 하는 대화들에 대해 요약
 
 ### Timeline
 
-- ex) January 10, 2024 - Start Date
-- ex) February 10, 2024 - Final submission deadline
+- March 08, 2024 - Start Date
+- March 20, 2024 - Final submission deadline
+
+### Evaluation
+
+- 예측된 요약 문장을 3개의 정답 요약 문장과 비교하여 metric의 평균 점수를 산출합니다. 본 대회에서는 ROUGE-1-F1, ROUGE-2-F1, ROUGE-L-F1, 총 3가지 종류의 metric으로부터 산출된 평균 점수를 더하여 최종 점수를 계산
 
 ## 2. Components
 
 ### Directory
 
-- _Insert your directory structure_
+- final_code (EDA는 따로 진행하지 않아 없음)
 
 e.g.
 ```
 ├── code
-│   ├── jupyter_notebooks
-│   │   └── model_train.ipynb
-│   └── train.py
+│   └── final_code.py
 ├── docs
 │   ├── pdf
-│   │   └── (Template) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디 .pptx
-│   └── paper
+│   └── (Template) [패스트캠퍼스] Upstage AI Lab 1기_NLP .pptx
 └── input
     └── data
         ├── eval
+        ├── dev
         └── train
 ```
 
