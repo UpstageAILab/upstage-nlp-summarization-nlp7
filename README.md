@@ -45,32 +45,46 @@ e.g.
 
 ### Dataset overview
 
-- _Explain using data_
+- 모든 데이터는 .csv 형식으로 제공되고 있으며, 데이터는 아래와 같은 형태이며, 최소2턴, 최대 60턴으로 대화가 구성
+train : 12457
+dev : 499
+test : 250
+hidden-test : 249
 
-### EDA
+### process data and build dataset classes
 
-- _Describe your EDA process and step-by-step conclusion_
+- 데이터셋을 데이터프레임으로 변환하고 인코더와 디코더의 입력을 생성
+- BART 모델의 입력, 출력 형태를 맞추기 위해 전처리를 진행
+- Train, validation, test에 사용되는 Dataset 클래스를 정의
+- tokenization 과정까지 진행된 최종적으로 모델에 입력될 데이터를 출력
 
-### Data Processing
 
-- _Describe data processing process (e.g. Data Labeling, Data Cleaning..)_
+### Building Trainers and TrainingArguments
 
-## 4. Modeling
-
-### Model descrition
-
-- _Write model information and why your select this model_
+- 모델 성능에 대한 평가 지표를 정의 (ROUGE)
+- 미리 정의된 불필요한 생성토큰들을 제거
+- 학습을 위한 trainer 클래스와 매개변수를 정의
 
 ### Modeling Process
 
-- _Write model train and test process with capture_
+- device를 정의
+- 사용할 모델과 tokenizer 및 데이터셋 불러오기
+- Trainer 클래스를 불러와 모델 학습 진행
+
+### Inferring models
+
+- Tokenization 과정까지 진행된 최종적으로 모델에 입력될 데이터를 출력
+- 추론을 위한 tokenizer와 학습시킨 모델을 불러오기
+- 정확한 평가를 위하여 노이즈에 해당되는 스페셜 토큰을 제거
+- 학습된 모델의 test를 진행
 
 ## 5. Result
 
 ### Leader Board
 
-- _Insert Leader Board Capture_
-- _Write rank and score_
+- <img width="963" alt="image" src="https://github.com/UpstageAILab/upstage-nlp-summarization-nlp7/assets/144979109/29216a40-ee98-4765-8d4a-c43511eacc90">
+
+- 5
 
 ### Presentation
 
