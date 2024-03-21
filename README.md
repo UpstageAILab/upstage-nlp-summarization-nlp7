@@ -46,10 +46,10 @@ e.g.
 ### Dataset overview
 
 - 모든 데이터는 .csv 형식으로 제공되고 있으며, 데이터는 아래와 같은 형태이며, 최소2턴, 최대 60턴으로 대화가 구성
-train : 12457
-dev : 499
-test : 250
-hidden-test : 249
+    - train : 12457
+    - dev : 499
+    - test : 250
+    - hidden-test : 249
 
 ### process data and build dataset classes
 
@@ -78,13 +78,14 @@ hidden-test : 249
 - 정확한 평가를 위하여 노이즈에 해당되는 스페셜 토큰을 제거
 - 학습된 모델의 test를 진행
 
+
 ## 5. Result
 
 ### Leader Board
 
 - <img width="963" alt="image" src="https://github.com/UpstageAILab/upstage-nlp-summarization-nlp7/assets/144979109/29216a40-ee98-4765-8d4a-c43511eacc90">
 
-- 5
+- 5등 (39.6005 / 0.4993 / 0.2990 / 0.3967)
 
 ### Presentation
 
@@ -92,10 +93,9 @@ hidden-test : 249
 
 ## etc
 
-### Meeting Log
-
-- _Insert your meeting log link like Notion or Google Docs_
-
 ### Reference
 
-- _Insert related reference_
+- (https://huggingface.co/docs/transformers/v4.38.2/en/main_classes/trainer#transformers.Seq2SeqTrainingArguments)
+- https://dacon.io/competitions/official/235673/data
+- https://github.com/hunminjeongeum-korean-competition-2021/dialogue-summarization?tab=readme-ov-file#%EB%AC%B8%EC%A0%9C-1-%EB%AC%B8%EC%84%9C%EC%9A%94%EC%95%BD-dataset-%EC%84%A4%EB%AA%85
+- https://tech.scatterlab.co.kr/alaggung-dlaggung-dialog-summary/
